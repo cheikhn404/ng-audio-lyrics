@@ -1,0 +1,7 @@
+{
+  "name": "ng-audio-lyrics",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,93 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="--background: transparent; position: absolute">
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="chevron-down-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid id="content-grid" class="ion-no-padding">
+    <ion-row id="lyrics">
+      <ion-col size="12" style="display: flex;" class="ion-align-items-center">
+        <div class="ion-padding">
+          <ul class="lyrics-list ion-padding" style="list-style-type: none; color: white;">
+            <li class="prev-prime">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur.</li>
+            <li class="prev">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur.</li>
+            <li class="active">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur.</li>
+            <li class="next">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur.</li>
+            <li class="next-prime">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur.</li>
+          </ul>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row id="player">
+      <ion-col size="12">
+        <div class="player-control">
+          <div>
+            <ion-grid>
+              <ion-row>
+                <ion-col size="12" style="display: flex;" class="ion-justify-content-center">
+                  <div class="ion-text-center">
+                    <h1 style="font-size: 1rem;" class="ion-no-margin">Massalikoul Djinane</h1>
+                    <h3 style="font-size: 0.8rem;" class="ion-no-margin">Cheikh Ndiaye</h3>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div>
+            <ion-grid style="padding: 0 16px;">
+              <ion-row>
+                <ion-col size="1" style="display: flex;" class="ion-align-items-center">
+                  <span>0:00</span>
+                </ion-col>
+                <ion-col size="10">
+                  <ion-range color="light"></ion-range>
+                </ion-col>
+                <ion-col size="1" style="display: flex;" class="ion-align-items-center">
+                  <span>3:59</span>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div>
+            <ion-grid style="padding: 0 16px;">
+              <ion-row>
+                <ion-col size="12" style="display: flex;" class="ion-justify-content-center">
+                  <ion-buttons id="player-buttons">
+                    <ion-button>
+                      <ion-icon slot="icon-only" name="shuffle"></ion-icon>
+                    </ion-button>
+                    <ion-button>
+                      <ion-icon slot="icon-only" name="play-skip-back"></ion-icon>
+                    </ion-button>
+                    <ion-button style="background-color: var(--ion-color-light); color: var(--ion-color-dark); border-radius: 50%;">
+                      <ion-icon slot="icon-only" name="play"></ion-icon>
+                    </ion-button>
+                    <ion-button>
+                      <ion-icon slot="icon-only" name="play-skip-forward"></ion-icon>
+                    </ion-button>
+                    <ion-button>
+                      <ion-icon slot="icon-only" name="repeat"></ion-icon>
+                    </ion-button>
+                  </ion-buttons>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
