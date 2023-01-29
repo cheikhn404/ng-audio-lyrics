@@ -1,0 +1,50 @@
+#content-grid {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/AhmaduBamba.jpg) center no-repeat fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+#lyrics {
+  /* background-color: brown; */
+  height: 70%;
+}
+
+#player {
+  background-color: #000000b9;
+  color: white !important;
+  height: 25%;
+  border-radius: 16px;
+  margin: 16px;
+}
+
+.player-control {
+  /* background-color: beige; */
+  border-radius: 16px;
+}
+
+#player-buttons ion-button {
+  margin: 0 8px;
+}
+
+ion-icon[name="play"] {
+  position: relative;
+  left: 1px;
+}
+
+.lyrics-list li {
+  margin: 8px 0;
+}
+
+.lyrics-list li.active {
+  font-size: 2rem;
+}
+
+.lyrics-list li.prev, .lyrics-list li.next {
+  font-size: 1.5rem;
+  color: #e2e2e2;
+}
+
+.lyrics-list li.prev-prime, .lyrics-list li.next-prime {
+  font-size: 1rem;
+  color: #c9c9c9;
+}
